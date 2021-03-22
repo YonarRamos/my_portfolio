@@ -1,0 +1,5 @@
+- Llenar datos de los trabajos realizados.
+- Llenar datos de los servivios.
+- Mejorar aspecto Contact me.
+- agregar loading al boton de enviar y notificaicon de enviado.
+- Agregar links al menu
