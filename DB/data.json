@@ -52,7 +52,7 @@
           {
           "name":"SCJhonson",  
           "description":"Conceived for the control of certain variables in the production of a certain line of products. It also allows the downloading of data in a convenient format for later analysis at other points in the circuit and the massive loading (.csv) of data in the system, facilitating the incorporation of new products to the system.",
-          "ES": "Concebido para el control de ciertas variables en la producción de una determinada linea de productos. Tambien permite la descarga de la data en un formato conveniente para su posterior analisis en otros puntos del circuito y la carga masiva(.csv) de datos en el sistema facilitando la incorporacioón de nuevos productos al sistema,",
+          "ES": "Concebido para el control de ciertas variables en la producción de una determinada linea de productos. Tambien permite la descarga de la data en un formato conveniente para su posterior analisis en otros puntos del circuito y la carga masiva(.csv) de datos en el sistema facilitando la incorporacioón de nuevos productos al sistema.",
           "imgs": [
             { "src": "works/scj/img1.png", "alt": "work_1" },
             { "src": "works/scj/img2.png", "alt": "work_2" },
