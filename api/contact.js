@@ -4,9 +4,8 @@ const bodyParser = require('body-parser')
 const nodemailer = require("nodemailer");
 var cors = require('cors')
 app.use(cors()); // Use this after the variable declaration
+app.use(express.json()); 
 app.use(bodyParser.json());
-app.use(express.json());
-
 
 let transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -33,7 +32,7 @@ let transporter = nodemailer.createTransport({
         let mailOptions = {
             from: 'yrdevops@gmail.com',
             to: 'yrdevops@gmail.com',
-            subject: 'Testing and testing',
+            subject: 'Correo de contacto.',
             html: 
             `
             <div style='display:flex;flex-direction:row;width:400px;height:200px;'>
@@ -55,7 +54,7 @@ let transporter = nodemailer.createTransport({
             if(err){
                 console.log(err)
             }else{
-                console.log('Email Sent!!!!!')
+                console.log('Email Sent!!!!!', data)
             }
         })
 })

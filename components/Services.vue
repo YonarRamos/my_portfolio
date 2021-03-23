@@ -3,7 +3,9 @@
     <div class="services__title">
       <h1 class="services__title__h1">Services</h1>
       <p class="services__title__description">
-          My name is Yonar Ramos, I am a computer engineer dedicated to web development. I've had the opportunity to participate in several projects that have allowed me to gain experience in the use of various tools and methodologies for the design, development and deployment of high-level websites.
+       <!--  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo laboriosam
+        aut iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo laboriosam
+        aut iure.  -->
       </p>
     </div>
 

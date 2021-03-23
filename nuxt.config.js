@@ -2,10 +2,7 @@ import colors from 'vuetify/es5/util/colors'
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
-  server: {
-    // nuxt.js server options ( can be overrided by environment variables )
-    port: 80
-  },
+  dev: process.env.NODE_ENV !== 'production',
   head: {
     titleTemplate: '%s - Portfolio',
     title: 'Yonar Ramos ',
@@ -22,6 +19,7 @@ export default {
     ]
   },
 
+  target:'static',
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],

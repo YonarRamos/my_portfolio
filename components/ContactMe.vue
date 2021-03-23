@@ -29,7 +29,7 @@
             :rules="generalRules"
             />
 
-            <v-btn color="primary" @click="enviar" class="button is-link">Submit</v-btn>
+            <v-btn :loading="loading" :color="btn_color" @click="enviar" :disabled="btn_disable" class="button is-link"> <v-img v-if="btn_success" max-width="30" src="check_circle-white-18dp.svg" class="mr-2" /> <v-img v-if="btn_error" max-width="30" src="cancel-white-18dp.svg" class="mr-2" /> Submit</v-btn>
 
 
     </v-form>
@@ -39,7 +39,7 @@
         <v-row>
           <v-col class="d-flex justify-center">
             <div class="call-me">
-              <h1 class="call-me__h3">Let's Talk</h1>
+              <h1 class="call-me__h3">Let's build something</h1>
             </div>
           </v-col>
         </v-row>
@@ -70,7 +70,12 @@ import axios from "../plugins/axios";
 export default {
   data() {
     return {
+      btn_success: false,
+      btn_error:false,
+      loading:false,
+      btn_disable:false,
       valid: true,
+      btn_color:"primary",
       generalRules: [
         v => !!v || 'Required',
       ],
@@ -88,6 +93,8 @@ export default {
   methods:{
     async enviar(){
       try {
+        this.btn_disable=true;
+        this.loading = true;
         if(this.$refs.form.validate()){
           await axios
           .post("/api/contact",this.data)
@@ -95,10 +102,27 @@ export default {
             console.log(res.data);
             this.$refs.form.reset();
             this.$refs.form.resetValidation();
+            this.loading=false;
+            this.btn_color="success";
+            this.btn_success=true;
+            this.btn_disable=false;
+
+            setTimeout(()=>{
+              this.btn_color="primary";
+              this.btn_success=false;
+            },3000);
           });
         }
       } catch (error) {
         console.log(error)
+        this.loading=false;
+        this.btn_error=true;
+        this.btn_disable=false;
+        this.btn_color="error";
+        setTimeout(()=>{
+            this.btn_color="primary";
+            this.btn_error=false;
+          },3000);
       }
      
     }
