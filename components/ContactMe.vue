@@ -51,7 +51,7 @@
         </v-col>
         <v-col cols="12" md="6">
           <v-row justify="center">
-            <v-col class="d-flex justify-center call-me__h3">
+            <v-col cols="12" class="d-flex justify-center call-me__h3">
               Let's build something
             </v-col>
             <v-img max-width="320" src="contact400.jpg"/>
