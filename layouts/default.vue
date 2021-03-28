@@ -2,11 +2,11 @@
   <v-app>
     <v-app-bar
       :clipped-left="clipped"
-      fixed     
       elevate-on-scroll
-      class="appBar"
+      app
+      dense
     >
-    <div class="">
+    <div>
         <img
           src="logo.png"
           width="200px"
@@ -50,9 +50,7 @@
 
     <!-- body -->
     <v-main>
-      <v-container>
-        <nuxt />
-      </v-container>
+      <nuxt />
     </v-main>
 
     <!-- footer -->
@@ -69,9 +67,12 @@
 export default {
   data () {
     return {
-      clipped: false,
+      clipped: true,
       drawer: false,
-      fixed: true,
+      fixed: false,
+      miniVariant: false,
+      right: true,
+      rightDrawer: false,
       items: [
         {
           icon: 'mdi-apps',
@@ -109,10 +110,6 @@ export default {
 }
 </script>
 <style>
-.appBar:hover{
-background: lightblue;
-color: lime;
-}
 #item{
   cursor: pointer;
 }

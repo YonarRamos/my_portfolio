@@ -2,7 +2,7 @@
     "services": [
         {
           "title": "Frontend",
-          "description":"Html5, Ccs3, Flexbox, Css Grid, Javascript, Responsive Web Design, Web development based on W3C standards, UX / UI - User Experience, Vue, React, SSR (Nuxt), Accessibility and Usability, Frameworks: Vuetify, Bootstrap 4, Version control: Git / GitHub.",
+          "description":"Html5, Ccs3, Flexbox, Css Grid, Javascript, Responsive Web Design, UX / UI - User Experience, Vue, React, SSR (Nuxt), Accessibility and Usability, Frameworks: Vuetify, Bootstrap 4, Version control: Git / GitHub.",
           "img":"s1B.png"
         },
         {
@@ -17,7 +17,7 @@
         },
         {
           "title": "SEO Optimze",
-          "description": "NuxtJs, Google Search, positioning, CTR ",
+          "description": "NuxtJs, NextJS, Google Search, positioning, CTR ",
           "img":"s4B.png"
         }
       ],

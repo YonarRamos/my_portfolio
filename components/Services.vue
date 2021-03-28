@@ -1,33 +1,28 @@
 <template >
-  <div class="services">
-    <div class="services__title">
+  <v-row class="pt-10">
+    <v-col class="services__title" cols="12">
       <h1 class="services__title__h1">Services</h1>
-      <p class="services__title__description">
-       <!--  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo laboriosam
-        aut iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo laboriosam
-        aut iure.  -->
-      </p>
-    </div>
+    </v-col>
 
-    <div class="services__container">
-      <div class="card services__card" v-for="(item, i) of services" :key="i">
-        <div class="card-image services__container__img">
-          <img :src="item.img" alt="Placeholder image" class="services__img" />
-        </div>
-        <div class="card-content">
-          <div class="media">
-            <div class="media-content">
-              <p class="title is-4 services__container__title">{{ item.title }}</p>
+    <v-col class="services__container">
+        <v-card height="400" class="card services__card" v-for="(item, i) of services" :key="i">
+          <div class="card-image services__container__img">
+            <img :src="item.img" alt="Placeholder image" class="services__img" />
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4 services__container__title">{{ item.title }}</p>
+              </div>
+            </div>
+
+            <div class="content">
+              <p class="services__container__description">{{ item.description }}</p>
             </div>
           </div>
-
-          <div class="content">
-            <p class="services__container__description">{{ item.description }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+        </v-card>
+    </v-col>
+  </v-row>
 </template>
 
 <script>
@@ -42,19 +37,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.services {
-  margin: 150px auto;
-  display: flex;
-  flex-direction: column;
-  .services__title {
     .services__title__h1 {
       font-size: 40px;
       font-weight:500px;
       text-align: center;
     }
     .services__title__description {
-      text-align: center
+      text-align: center;
     }
+  .content{
+    padding: 15px;
   }
 
   .services__container {
@@ -64,10 +56,10 @@ export default {
     justify-content: space-around;
     margin-top: 10px;
     .services__card {
-      margin: 10px;
+      margin: 5px;
       border: 3px solid #6b83f2;
       border-radius: 10px;
-      max-width: 250px;
+      max-width: 265px;
       .services__container__title{
         text-align: center;
       }
@@ -94,5 +86,10 @@ export default {
       }
     }
   }
-}
+@media only screen and (max-width: 400px) {
+.services__card {
+	max-width: 100% !important;
+ }
+
+ }
 </style>

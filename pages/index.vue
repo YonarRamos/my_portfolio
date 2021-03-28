@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <v-container>
     <greeting id="greeting"/>
-    <about id=""/>
+    <about id="about"/> 
     <services id="services"/>
     <works id="works"/>
     <contact-me id="contact-me"/>
-  </div>
+  </v-container>
 </template>
 
 <script>

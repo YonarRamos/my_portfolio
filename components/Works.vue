@@ -1,5 +1,5 @@
 <template >
-  <v-card style="margin-top: 30px" color="#6b83f2">
+  <v-card style="margin-top: 90px" color="#6b83f2">
     <v-carousel
       id="carrusel"
       :show-arrows="false" 
