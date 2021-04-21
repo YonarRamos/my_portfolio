@@ -3,8 +3,8 @@
     <greeting id="greeting"/>
     <about id="about"/> 
     <services id="services"/>
-    <works id="works"/>
-    <contact-me id="contact-me"/>
+    <works id="works" style="z-index:2"/>
+    <contact-me id="contact-me" style="z-index:1"/>
   </v-container>
 </template>
 

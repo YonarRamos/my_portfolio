@@ -2,12 +2,12 @@
     "services": [
         {
           "title": "Frontend",
-          "description":"Html5, Ccs3, Flexbox, Css Grid, Javascript, Responsive Web Design, UX / UI - User Experience, Vue, React, SSR (Nuxt), Accessibility and Usability, Frameworks: Vuetify, Bootstrap 4, Version control: Git / GitHub.",
+          "description":"Html5, Ccs3, Flexbox, Css Grid, Javascript, Responsive Web Design, UX / UI - User Experience, Vue, React, NuxtJs, Accessibility and Usability, Version control: Git / GitHub, Frameworks: Vuetify, Bootstrap 4.",
           "img":"s1B.png"
         },
         {
           "title": "Backend",
-          "description": "Nodejs, Frameworks: ExpressJs/adonisJs, JWT, ApiRest, Mailing (nodemailer)",
+          "description": "NodeJs, Frameworks: ExpressJs/adonisJs, JWT, ApiRest, Mailing (nodemailer)",
           "img":"s3B.png"
         },
         {
@@ -24,7 +24,7 @@
     "works":[
         {
           "name":"Sy-Digital",
-          "description":"It is a system that allows managing production, work orders, monitoring production lines and their associated components as well as managing the privileges of users who will have access to certain features.",      
+          "description":"It's a system that allows managing production, work orders, monitoring production lines and their associated components as well as managing the privileges of users who will have access to certain features.",      
           "ES":"Es un sistema que permite administrar la produccion, gestionar ordenes de trabajos, monitorear lineas de produccion y sus componentes asociodos asi como administrar los privilegios de los usuarios que tendran acceso a ciertas caracteristicas.",
           "imgs": [
             { "src": "works/sydigital/img1.png", "alt": "work_1" },
@@ -38,7 +38,7 @@
           },
           {
           "name":"Unilever",
-          "description":"This project provides a series of interfaces that allow the client to manage their associated equipment and instruments, as well as load and monitor the status of calibration tasks for said instruments, generating certificates for each completed task if necessary.",
+          "description":"This project provides a series of interfaces that allow the client to manage their associated equipment and instruments, load and monitor the status of calibration tasks for such instruments, generating certificates for each completed task if necessary.",
           "ES":"Este proyecto brinda una serie de interfaces que le permiten al cliente la gestion de sus equipos e intrumentos asociados, asi como la cargar y monitoreo de estatus de tareas de calibración para dichos intrementos, generando certificados para cada tarea culminada confoirme sea necesario.",           
           "imgs": [
             { "src": "works/webUnilever/img0.png", "alt": "work_1" },
@@ -51,7 +51,7 @@
           },
           {
           "name":"SCJhonson",  
-          "description":"Conceived for the control of certain variables in the production of a certain line of products. It also allows the downloading of data in a convenient format for later analysis at other points in the circuit and the massive loading (.csv) of data in the system, facilitating the incorporation of new products to the system.",
+          "description":"Conceived for control of certain's production variables for some products. It also allows downloading data in a convenient format for its analysis at other points on production circuit and the massive loading data (.csv), facilitating incorporation of new products to the system.",
           "ES": "Concebido para el control de ciertas variables en la producción de una determinada linea de productos. Tambien permite la descarga de la data en un formato conveniente para su posterior analisis en otros puntos del circuito y la carga masiva(.csv) de datos en el sistema facilitando la incorporacioón de nuevos productos al sistema.",
           "imgs": [
             { "src": "works/scj/img1.png", "alt": "work_1" },
@@ -61,7 +61,7 @@
           },
           {
           "name":"Unilever - Hellmans",
-          "description":"The purpose of this system is to monitor and detect failures according to the data produced by the SCADA system in charge of monitoring cleaning tasks and discarding certain products in storage tanks.",            
+          "description":"The purpose of this system is monitoring and detect failures according to data produced by the SCADA system in charge of monitoring cleaning tasks and discarding certain products in storage tanks.",            
           "ES":"Este sistema tiene como finalidad el monitoreo y deteccion de fallas segun los datos arrojados por el sistema SCADA encargado del monitoreo de tareas de limpieza y descarte de ciertos producto en tanques de almacenamiento.",
           "imgs": [
             { "src": "works/hellmans/img1.png", "alt": "work_1" },

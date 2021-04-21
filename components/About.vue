@@ -8,7 +8,7 @@
     <v-col cols="12" sm="6">
       <v-container>
         <h2 class="about__h2">Let me Introduce Myself</h2>
-        <p class="about__description">My name is Yonar Ramos, I am a computer engineer dedicated to web development. I've had the opportunity to participate in several projects that have allowed me to gain experience in the use of various tools and methodologies for the design, development and deployment of high-level websites. </p>
+        <p class="about__description">My name is Yonar Ramos, I am a computer engineer dedicated to web development. I've had the opportunity to participate in several projects that have allowed me to gain experience in the use of various tools and methodologies for design, development and deployment of high-level websites. </p>
         <br>
         <v-col class="d-flex justify-center">
           <v-btn href="ING_YONAR_RAMOS.pdf" download="ING_YONAR_RAMOS" color="primary" class="greeting__options__buttons">Get CV</v-btn>
