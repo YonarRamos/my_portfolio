@@ -6,7 +6,7 @@
       style="border-radius: 10px"
       height="auto"
       :hide-delimiters="hide"
-    >{{hide}}
+    >
       <v-carousel-item v-for="(work, i) in works" :key="i">
         <v-sheet :color="colors[i]" height="100%">
           <v-row>
