@@ -11,7 +11,7 @@
         <p class="about__description">My name is Yonar Ramos, I am a computer engineer dedicated to web development. I've had the opportunity to participate in several projects that have allowed me to gain experience in the use of various tools and methodologies for design, development and deployment of high-level websites. </p>
         <br>
         <v-col class="d-flex justify-center">
-          <v-btn href="ING_YONAR_RAMOS.pdf" download="ING_YONAR_RAMOS" color="primary" class="greeting__options__buttons">Get CV</v-btn>
+          <v-btn href="ENG.YONAR_RAMOS.pdf" download="ING_YONAR_RAMOS" color="primary" class="greeting__options__buttons">Get CV</v-btn>
         </v-col>
       </v-container>
     </v-col>
