@@ -11,7 +11,7 @@
                 <h1>Web Developer</h1>
             </v-col>           
             <v-col class="d-flex justify-center">
-                <v-btn color="primary" href="ING_YONAR_RAMOS.pdf" download="ING_YONAR_RAMOS" class="button is-info">Get CV</v-btn>
+                <v-btn color="primary" href="ENG.YONAR_RAMOS.pdf" download="ENG_YONAR_RAMOS" class="button is-info">Get CV</v-btn>
                 <v-btn color="primary" href="#contact-me" class="ml-2">
                     Contact me
                 </v-btn>
