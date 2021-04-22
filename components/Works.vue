@@ -8,7 +8,6 @@
       :hide-delimiters="hide"
     >
       <v-carousel-item v-for="(work, i) in works" :key="i">
-        <v-sheet :color="colors[i]" height="100%">
           <v-row>
             <v-col cols="12" md="6">
               <v-card-title class="pl-9 white--text">
@@ -22,22 +21,12 @@
               </div>
             </v-col>
             <v-col cols="12" md="6">
-                <v-row>
-                  <v-col>
-                    <v-carousel hide-delimiters height="auto" style="border-radius: 10px">
-                      <v-carousel-item v-for="(item, i) in work.imgs" :key="i" @click="showGallery(i)"
-                        :src="item.src"
-                        :alt="item.alt"
-                        min-height="400"
-                        style="border-radius: 7px;display:block;width:100%">
-                      </v-carousel-item>
-                    </v-carousel>
-                  </v-col>
-                </v-row>
+
+                    <galeria :imgs="work.imgs"/>
+       
             </v-col>
           </v-row>
-        </v-sheet>
-          <gallery style="z-index:3" :imgs="work.imgs" ref="gallery"/>
+          <gallery style="z-index:3" :imgs="work.imgs"/>
       </v-carousel-item>
     </v-carousel>
   </v-card>
@@ -46,13 +35,16 @@
 <script>
 import data from "@/DB/data.json";
 import Gallery from "~/components/Gallery"
-import { mapState } from "vuex";
+import Galeria from "~/components/Galeria"
+import { mapMutations, mapState } from "vuex";
 export default {
   components:{
-    Gallery
+    Gallery,
+    Galeria
   },
   data() {
     return {
+      model:0,
       works: data.works,
       colors: ["#6b83f2", "#6b83f2", "#6b83f2", "#6b83f2"],
      }
@@ -61,9 +53,7 @@ export default {
     ...mapState(['hide'])
   },
   methods:{
-    showGallery(index){
-      this.$refs.gallery[index].show();
-    }
+    ...mapMutations(['changeHide']),
   }
 }
 </script>

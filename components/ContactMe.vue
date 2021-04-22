@@ -51,8 +51,8 @@
         </v-col>
         <v-col cols="12" md="6">
           <v-row justify="center">
-            <v-col cols="12" class="d-flex justify-center call-me__h3">
-              Let's build something
+            <v-col cols="12" class="d-flex justify-center">
+              <h1 class="call-me__h3">Let's build something</h1> 
             </v-col>
             <v-img max-width="320" src="contact400.jpg"/>
             <v-col cols="12" class="d-flex justify-center" style="font-size:35px;font-family:Brush Script MT, Brush Script Std, cursive;">
@@ -159,9 +159,8 @@ export default {
   }
     .call-me__h3 {
       font-size: 40px;
-      font-weight: 900px;
+      font-weight:500px;
       text-align: center;
-      font-family: "URW Chancery L", cursive;
     }
   .mis-datos {
     display: flex;

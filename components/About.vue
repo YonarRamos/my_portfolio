@@ -1,11 +1,11 @@
 <template >
   <v-row align="center" class="pt-10">
-    <v-col cols="12" sm="6">
+    <v-col cols="12" md="7">
       <div class="about__img">
         <v-img max-width="500" class="img" src="about-us.png" alt="about-banner" />
       </div>
     </v-col>
-    <v-col cols="12" sm="6">
+    <v-col cols="12" md="5">
       <v-container>
         <h2 class="about__h2">Let me Introduce Myself</h2>
         <p class="about__description">My name is Yonar Ramos, I am a computer engineer dedicated to web development. I've had the opportunity to participate in several projects that have allowed me to gain experience in the use of various tools and methodologies for design, development and deployment of high-level websites. </p>
@@ -66,7 +66,7 @@ export default {};
     max-width: 500px;
     }
   } */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 960px) {
 .img {
 	display: none !important;
  }

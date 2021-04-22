@@ -1,18 +1,21 @@
 <template>
-    <v-overlay v-model="hide" :opacity="0.8" :z-index="3">
-        <v-card-title class="pb-0">
-            <v-spacer></v-spacer>
-            <v-icon large @click="hideEvent" style="cursor:pointer;">mdi-eye-off</v-icon>
-        </v-card-title>
-        <v-carousel height="auto">
+    <v-container>
+        <v-carousel
+        hide-delimiters 
+        height="auto" 
+        style="border-radius: 10px"
+        >
             <v-carousel-item
             v-for="(img,i) in imgs"
+            :src="img.src"
             :key="i"
-            >
-                <img class="img" :src="img.src" />
-            </v-carousel-item>
-        </v-carousel>           
-    </v-overlay>            
+            min-height="400"
+            style="border-radius: 10px;display:block;width:100%"
+            class="img"
+            @click="showGallery()"
+            />
+        </v-carousel>     
+    </v-container>               
 </template>
 
 <script>
@@ -40,18 +43,15 @@ export default {
         },
         hideEvent(){
             this.changeHide(false);
+        },
+        showGallery(){
+        this.changeHide(true);
         }
     }
 }
 </script>
 
 <style>
-    .img{
-        display: block;
-        width: 800px;
-        height: auto;
-        max-height: 500px;
-    }
     @media (max-width: 600px) {
       .img {
         width: 100%;
